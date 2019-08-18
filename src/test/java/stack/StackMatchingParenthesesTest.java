@@ -118,19 +118,19 @@ class StackMatchingParenthesesTest {
         //When (abcd) - Then
         assertTrue(stackMatchingParentheses.isValid("(abcd)"));
 
-        // When {{{{}}
+        // When {{{{}} - Then
         assertFalse(stackMatchingParentheses.isValid("{{{{}}"));
 
-        // When {{{{}}})
+        // When {{{{}}}) - Then
         assertFalse(stackMatchingParentheses.isValid("{{{{}}})"));
 
-        // When {{{}}}()
+        // When {{{}}}() - Then
         assertTrue(stackMatchingParentheses.isValid("{{{}}}()"));
 
-        // When {{{}}]()
+        // When {{{}}]() - Then
         assertFalse(stackMatchingParentheses.isValid("{{{}}]()"));
 
-        // When {{}}([]){}{}{}{}{[[[[]]]]}
+        // When {{}}([]){}{}{}{}{[[[[]]]]} - Then
         assertTrue(stackMatchingParentheses.isValid("{{}}([]){}{}{}{}{[[[[]]]]}"));
     }
 
