@@ -2,8 +2,7 @@ package stack;
 
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertThrows;
-import static org.junit.jupiter.api.Assertions.assertTrue;
+import static org.junit.jupiter.api.Assertions.*;
 
 class StackMatchingParenthesesTest {
 
@@ -109,6 +108,30 @@ class StackMatchingParenthesesTest {
             //When
             stackMatchingParentheses.isValid(testInput);
         });
+    }
+
+    @Test
+    void testValuesFromExample() {
+        //Given
+        StackMatchingParentheses stackMatchingParentheses = new StackMatchingParentheses();
+
+        //When (abcd) - Then
+        assertTrue(stackMatchingParentheses.isValid("(abcd)"));
+
+        // When {{{{}}
+        assertFalse(stackMatchingParentheses.isValid("{{{{}}"));
+
+        // When {{{{}}})
+        assertFalse(stackMatchingParentheses.isValid("{{{{}}})"));
+
+        // When {{{}}}()
+        assertTrue(stackMatchingParentheses.isValid("{{{}}}()"));
+
+        // When {{{}}]()
+        assertFalse(stackMatchingParentheses.isValid("{{{}}]()"));
+
+        // When {{}}([]){}{}{}{}{[[[[]]]]}
+        assertTrue(stackMatchingParentheses.isValid("{{}}([]){}{}{}{}{[[[[]]]]}"));
     }
 
 }
