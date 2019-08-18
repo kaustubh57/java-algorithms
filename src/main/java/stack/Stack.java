@@ -79,9 +79,9 @@ public class Stack<T> {
         }
     }
 
-    public static class StackOverflowException extends Exception {
+    public static class StackOverflowException extends RuntimeException {
     }
 
-    public static class StackUnderFlowException extends Exception {
+    public static class StackUnderFlowException extends RuntimeException {
     }
 }
