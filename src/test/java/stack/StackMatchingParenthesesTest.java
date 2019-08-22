@@ -132,6 +132,9 @@ class StackMatchingParenthesesTest {
 
         // When {{}}([]){}{}{}{}{[[[[]]]]} - Then
         assertTrue(stackMatchingParentheses.isValid("{{}}([]){}{}{}{}{[[[[]]]]}"));
+
+        // When {)({test}} - Then
+        assertFalse(stackMatchingParentheses.isValid("{)({test}}"));
     }
 
 }
