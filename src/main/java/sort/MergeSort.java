@@ -60,32 +60,25 @@ public class MergeSort {
             return;
         }
 
-        int lhPosition = 0, rhPosition = 0, sortedIndex = 0;
+        int rhPosition = 0;
+        int sortedIndex = 0;
 
-        for (int i = 0; i < lhList.length; i++) {
+        for (int lhElement : lhList) {
             if (rhPosition != rhList.length) {
                 for (int j = rhPosition; j < rhList.length; j++) {
-                    if (rhList[j] < lhList[i]) {
+                    if (rhList[j] < lhElement) {
                         listToSort[sortedIndex] = rhList[j];
                         rhPosition = j + 1;
                         sortedIndex++;
                     } else {
-                        listToSort[sortedIndex] = lhList[i];
-                        lhPosition = i + 1;
-                        sortedIndex++;
                         break;
                     }
                 }
-            } else {
-                listToSort[sortedIndex] = lhList[i];
-                lhPosition = i + 1;
-                sortedIndex++;
-            }
-        }
 
-        if (lhPosition != lhList.length) {
-            for (int i = lhPosition; i < lhList.length; i++) {
-                listToSort[sortedIndex] = lhList[i];
+                listToSort[sortedIndex] = lhElement;
+                sortedIndex++;
+            } else {
+                listToSort[sortedIndex] = lhElement;
                 sortedIndex++;
             }
         }
@@ -102,7 +95,7 @@ public class MergeSort {
             System.out.print(" | " + element);
         }
         System.out.println(" |");
-
+        System.out.println("===========================");
     }
 
 }

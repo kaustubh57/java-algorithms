@@ -79,5 +79,50 @@ class MergeSortTest {
         assertArrayEquals(new int[]{1, 2, 3, 4, 5, 6, 7, 8, 9, 10}, elements);
     }
 
+    @Test
+    void mergeSortExample3() {
+        //Given 1,2,3
+        int[] elements = {1, 2, 3};
+        //When
+        MergeSort.mergeSort(elements);
+        //Then
+        assertArrayEquals(new int[]{1, 2, 3}, elements);
+
+        //Given 1,3,2
+        elements = new int[]{1, 3, 2};
+        //When
+        MergeSort.mergeSort(elements);
+        //Then
+        assertArrayEquals(new int[]{1, 2, 3}, elements);
+
+        //Given 2,1,3
+        elements = new int[]{2, 1, 3};
+        //When
+        MergeSort.mergeSort(elements);
+        //Then
+        assertArrayEquals(new int[]{1, 2, 3}, elements);
+
+        //Given 2,3,1
+        elements = new int[]{2, 3, 1};
+        //When
+        MergeSort.mergeSort(elements);
+        //Then
+        assertArrayEquals(new int[]{1, 2, 3}, elements);
+
+        //Given 3,1,2
+        elements = new int[]{3, 1, 2};
+        //When
+        MergeSort.mergeSort(elements);
+        //Then
+        assertArrayEquals(new int[]{1, 2, 3}, elements);
+
+        //Given 3,2,1
+        elements = new int[]{3, 2, 1};
+        //When
+        MergeSort.mergeSort(elements);
+        //Then
+        assertArrayEquals(new int[]{1, 2, 3}, elements);
+    }
+
 
 }
