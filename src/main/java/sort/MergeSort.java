@@ -33,7 +33,7 @@ public class MergeSort {
         merge(listToSort, lhList, rhList);
     }
 
-    public static void split(int[] listToSort, int[] lhList, int[] rhList) {
+    private static void split(int[] listToSort, int[] lhList, int[] rhList) {
         for (int i = 0; i < listToSort.length; i++) {
             if (i < lhList.length) {
                 lhList[i] = listToSort[i];
@@ -43,7 +43,7 @@ public class MergeSort {
         }
     }
 
-    public static void merge(int[] listToSort, int[] lhList, int[] rhList) {
+    private static void merge(int[] listToSort, int[] lhList, int[] rhList) {
         System.out.println("----------- merge -----------");
         System.out.println("------- ## LH List ## -------");
         for (int element : lhList) {
