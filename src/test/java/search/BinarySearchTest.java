@@ -31,4 +31,30 @@ class BinarySearchTest {
         assertEquals(-1, resultNotInListForSingleValueList);
         assertEquals(100, resultInListForSingleValueList);
     }
+
+    @Test
+    void binarySearch_integer_withRecursion() {
+        //Given
+        BinarySearch binarySearch = new BinarySearch();
+        int[] searchList = {1, 3, 5, 7, 9};
+        int searchNumber1 = 3;
+        int searchNumber2 = 9;
+        int searchNotInList = 6;
+
+        //When
+        final int result1 = binarySearch.binarySearch_integer_withRecursion(searchList, 0, searchList.length - 1, searchNumber1);
+        final int result2 = binarySearch.binarySearch_integer_withRecursion(searchList, 0, searchList.length - 1, searchNumber2);
+        final int resultNotInList = binarySearch.binarySearch_integer_withRecursion(searchList, 0, searchList.length - 1, searchNotInList);
+        final int resultForEmptyList = binarySearch.binarySearch_integer_withRecursion(new int[]{}, 0, 0, 100);
+        final int resultNotInListForSingleValueList = binarySearch.binarySearch_integer_withRecursion(new int[]{4}, 0, 0, 100);
+        final int resultInListForSingleValueList = binarySearch.binarySearch_integer_withRecursion(new int[]{100}, 0, 0, 100);
+
+        //Then
+        assertEquals(searchNumber1, result1);
+        assertEquals(searchNumber2, result2);
+        assertEquals(-1, resultNotInList);
+        assertEquals(-1, resultForEmptyList);
+        assertEquals(-1, resultNotInListForSingleValueList);
+        assertEquals(100, resultInListForSingleValueList);
+    }
 }
