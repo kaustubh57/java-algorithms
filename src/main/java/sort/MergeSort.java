@@ -11,11 +11,7 @@ public class MergeSort {
     }
 
     public static void mergeSort(int[] listToSort) {
-        System.out.println("----------- listToSort -----------");
-        for (int element : listToSort) {
-            System.out.print(" | " + element);
-        }
-        System.out.println(" |");
+        printListToSort(listToSort);
 
         if (listToSort.length == 1) {
             return;
@@ -44,17 +40,7 @@ public class MergeSort {
     }
 
     private static void merge(int[] listToSort, int[] lhList, int[] rhList) {
-        System.out.println("----------- merge -----------");
-        System.out.println("------- ## LH List ## -------");
-        for (int element : lhList) {
-            System.out.print(" | " + element);
-        }
-        System.out.println(" |");
-        System.out.println("------- ## RH List ## -------");
-        for (int element : rhList) {
-            System.out.print(" | " + element);
-        }
-        System.out.println(" |");
+        printLHAndRHList(lhList, rhList);
 
         if (listToSort.length == 1) {
             return;
@@ -64,7 +50,7 @@ public class MergeSort {
         int sortedIndex = 0;
 
         for (int lhElement : lhList) {
-            if (rhPosition != rhList.length) {
+            if (rhPosition < rhList.length) {
                 for (int j = rhPosition; j < rhList.length; j++) {
                     if (rhList[j] < lhElement) {
                         listToSort[sortedIndex] = rhList[j];
@@ -83,19 +69,47 @@ public class MergeSort {
             }
         }
 
-        if (rhPosition != rhList.length) {
+        if (rhPosition < rhList.length) {
             for (int i = rhPosition; i < rhList.length; i++) {
                 listToSort[sortedIndex] = rhList[i];
                 sortedIndex++;
             }
         }
 
+        printSortedListAfterMerge(listToSort);
+    }
+
+
+    // ## print methods
+    private static void printLHAndRHList(int[] lhList, int[] rhList) {
+        System.out.println("----------- merge -----------");
+        System.out.println("------- ## LH List ## -------");
+        for (int element : lhList) {
+            System.out.print(" | " + element);
+        }
+        System.out.println(" |");
+        System.out.println("------- ## RH List ## -------");
+        for (int element : rhList) {
+            System.out.print(" | " + element);
+        }
+        System.out.println(" |");
+    }
+
+    private static void printSortedListAfterMerge(int[] listToSort) {
         System.out.println("---- [after merge] listToSort -------");
         for (int element : listToSort) {
             System.out.print(" | " + element);
         }
         System.out.println(" |");
         System.out.println("===========================");
+    }
+
+    private static void printListToSort(int[] listToSort) {
+        System.out.println("----------- listToSort -----------");
+        for (int element : listToSort) {
+            System.out.print(" | " + element);
+        }
+        System.out.println(" |");
     }
 
 }
