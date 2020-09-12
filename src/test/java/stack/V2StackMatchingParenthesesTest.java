@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
 
-class StackMatchingParenthesesTest {
+class V2StackMatchingParenthesesTest {
 
     @Test
     void testRoundBrackets() {
