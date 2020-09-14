@@ -1,4 +1,4 @@
-package practicaldatastructure.doublylinkedlist;
+package practicaldatastructure.datastructure.doublylinkedlist.doublylinkedlist;
 
 public class Node {
     public int data;

@@ -1,4 +1,4 @@
-package practicaldatastructure.stack;
+package practicaldatastructure.datastructure.stack;
 
 public class App {
 

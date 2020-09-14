@@ -1,4 +1,4 @@
-package practicaldatastructure.singlylinkedlist;
+package practicaldatastructure.datastructure.singlylinkedlist;
 
 public class App {
 

@@ -1,4 +1,4 @@
-package practicaldatastructure.queue;
+package practicaldatastructure.datastructure.queue;
 
 public class Queue {
 

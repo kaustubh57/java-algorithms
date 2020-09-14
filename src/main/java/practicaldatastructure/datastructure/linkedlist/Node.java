@@ -1,4 +1,4 @@
-package practicaldatastructure.linkedlist;
+package practicaldatastructure.datastructure.linkedlist;
 
 public class Node {
     int data;

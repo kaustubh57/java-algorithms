@@ -1,4 +1,4 @@
-package practicaldatastructure.circularlinkedlist;
+package practicaldatastructure.datastructure.circularlinkedlist;
 
 public class CircularLinkedList {
 
