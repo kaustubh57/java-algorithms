@@ -60,13 +60,10 @@ public class MergeSort {
                         break;
                     }
                 }
-
-                listToSort[sortedIndex] = lhElement;
-                sortedIndex++;
-            } else {
-                listToSort[sortedIndex] = lhElement;
-                sortedIndex++;
             }
+
+            listToSort[sortedIndex] = lhElement;
+            sortedIndex++;
         }
 
         if (rhPosition < rhList.length) {
