@@ -1,4 +1,4 @@
-package practicaldatastructure.datastructure.doublylinkedlist.doublylinkedlist;
+package practicaldatastructure.datastructure.doublylinkedlist;
 
 public class DoublyLinkedList {
 

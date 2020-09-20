@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.recursivelinearsearch;
+package practicaldatastructure.algorithm.recursivelinearsearch;
 
 public class App {
 

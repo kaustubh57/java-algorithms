@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.recursivebinarysearch;
+package practicaldatastructure.algorithm.recursivebinarysearch;
 
 public class App {
 

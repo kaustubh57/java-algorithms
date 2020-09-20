@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.linearsearch;
+package practicaldatastructure.algorithm.linearsearch;
 
 public class App {
 

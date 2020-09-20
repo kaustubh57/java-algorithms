@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.mergesort;
+package practicaldatastructure.algorithm.mergesort;
 
 import java.util.Arrays;
 

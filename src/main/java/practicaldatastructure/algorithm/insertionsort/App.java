@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.insertionsort;
+package practicaldatastructure.algorithm.insertionsort;
 
 import java.util.Arrays;
 

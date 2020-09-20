@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.mergesort3;
+package practicaldatastructure.algorithm.mergesort3;
 
 public class App {
 

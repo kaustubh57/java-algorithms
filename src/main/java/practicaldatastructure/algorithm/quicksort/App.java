@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.quicksort;
+package practicaldatastructure.algorithm.quicksort;
 
 import java.util.Arrays;
 

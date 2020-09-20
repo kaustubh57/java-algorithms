@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.binarysearch;
+package practicaldatastructure.algorithm.binarysearch;
 
 import java.util.Arrays;
 

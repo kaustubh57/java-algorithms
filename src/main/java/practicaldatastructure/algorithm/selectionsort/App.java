@@ -1,4 +1,4 @@
-package practicaldatastructure.algo.selectionsort;
+package practicaldatastructure.algorithm.selectionsort;
 
 import java.util.Arrays;
 
