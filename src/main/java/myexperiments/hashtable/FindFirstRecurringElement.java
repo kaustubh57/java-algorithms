@@ -14,9 +14,15 @@ public class FindFirstRecurringElement {
         System.out.println("1. First recurring element is: " + findFirstRecurringElement(testArray1));
         System.out.println("2. First recurring element is: " + findFirstRecurringElement(testArray2));
         System.out.println("3. First recurring element is: " + findFirstRecurringElement(testArray3));
+        System.out.println("4. First recurring element is: " + findFirstRecurringElement(new int[]{1, 1}));
+        System.out.println("5. First recurring element is: " + findFirstRecurringElement(null));
     }
 
     private static int findFirstRecurringElement(int[] array) {
+        if (array == null) {
+            return -1;
+        };
+
         Set<Integer> set = new HashSet<>();
         for (int i : array) {
             if (set.contains(i)) {
