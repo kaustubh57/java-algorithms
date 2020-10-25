@@ -81,7 +81,7 @@ public class LinkedList {
     }
 
     public void reverse() {
-        if (head == null) {
+        if (head == null || size == 1) {
             return;
         }
 

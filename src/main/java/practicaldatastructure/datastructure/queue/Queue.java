@@ -4,8 +4,8 @@ public class Queue {
 
     private static final int EMPTY_DATA_CONSTANT = -999;
 
-    private int maxSize;
-    private long[] queueArray;
+    private final int maxSize;
+    private final long[] queueArray;
     private int frontIndex;
     private int rearIndex;
     private int totalItems;

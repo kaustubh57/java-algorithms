@@ -18,6 +18,7 @@ public class App {
         linkedList.clear();
         linkedList.addHead(5);
         linkedList.insert(398);
+        linkedList.insert(43);
         linkedList.reverse();
         System.out.println("======REVERSE==========");
         System.out.println("Size: " + linkedList.size);
